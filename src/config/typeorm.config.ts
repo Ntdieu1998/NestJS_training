@@ -20,15 +20,4 @@ export const typeOrmConfigAsync: TypeOrmModuleAsyncOptions = {
   imports: [ConfigModule],
   useFactory: async (configService: ConfigService): Promise<TypeOrmModuleOptions> => TypeOrmConfig.getOrmConfig(configService),
   inject: [ConfigService]
-};
-
-// export const typeOrmConfigAsync: TypeOrmModuleOptions = {
-//       type: 'postgres',
-//       host: 'localhost',
-//       port: 5432,
-//       username: 'postgres',
-//       password: '123456',
-//       database: 'taskmanagement',
-//       autoLoadEntities: true,
-//       synchronize: true,
-// }
+}; 
