@@ -12,7 +12,6 @@ export default class TypeOrmConfig {
       database: configService.get('DB_NAME'),
       autoLoadEntities: true,
       synchronize: true,
-      logging: true,
     };
   }
 }
